@@ -1,5 +1,4 @@
 <html>
-    
     <head>
         <link rel="stylesheet" type= text/css href = "sheetstyle.css">
     </head>
@@ -9,7 +8,7 @@
             <br>
             <input type= "text" name="n2" class="firstinput" id="n2">
             <br>
-            <p> <select size="3" class="secondinput" name="oper" id="oper">
+            <p><select size="1" class="secondinput" name="oper" id="oper">
              <option disabled>Выберите действие</option>
              <option value="+">+</option>
              <option value="-">-</option>
