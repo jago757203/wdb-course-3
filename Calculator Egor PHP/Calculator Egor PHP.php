@@ -3,7 +3,7 @@
         <link rel="stylesheet" type= text/css href = "sheetstyle.css">
     </head>
     <body class="bckgrnd">
-        <form method="POST"
+        <form method="POST">
             <input type="text" name="n1" class="firstinput" id="n1">
             <br>
             <input type= "text" name="n2" class="firstinput" id="n2">
