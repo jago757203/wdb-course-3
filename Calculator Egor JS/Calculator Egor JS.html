@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
     
     <head>
@@ -116,3 +117,122 @@
     
 </html>
 
+=======
+<html>
+    
+    <head>
+        <link rel="stylesheet" type= text/css href = "sheetstyle.css">
+        <script>
+        document.addEventListener("DOMContentLoaded", createPage);
+
+        function createPage(){
+            let input1 = document.createElement("input");
+            input1.id = "n1";
+            input1.type = "text";
+            input1.classList.add("firstinput");
+            input1.style.fontSize = "20px";
+
+            document.body.append(input1);
+
+            let select=document.createElement("select");
+            select.classList.add("secondinput");
+            select.size = "1";
+            select.id = "oper";
+            select.class = "secondinput";
+            select.style.fontSize = "15px";
+
+            let option1 = document.createElement("option");
+            option1.innerHTML = "+";
+            option1.id = "oper";
+            option1.value = "+";
+            
+            select.append(option1);
+
+            let option2=document.createElement("option");
+            option2.innerHTML = "-";
+            option2.id = "oper";
+            option2.value = "-";
+            
+            select.append(option2);
+
+            let option3=document.createElement("option");
+            option3.innerHTML = "*";
+            option3.id = "oper";
+            option3.value = "*";
+
+            select.append(option3);
+
+            let option4=document.createElement("option");
+            option4.innerHTML = "/";
+            option4.id = "oper";
+            option4.value = "/";
+
+            select.append(option4);
+
+            document.body.append(select);
+
+            let input2=document.createElement("input");
+            input2.id = "n2";
+            input2.type = "text";
+            input2.classList.add("firstinput");
+            input2.size = "40";
+            input2.style.fontSize = "20px";
+
+            document.body.append(input2);
+
+            let button=document.createElement("button");
+            button.classList.add("b1");
+            button.innerHTML = "Результат";
+            button.onclick = function(){calc()};
+
+            document.body.append(button);
+
+            let div = document.createElement("div");
+            div.id ="result";
+            div.classList.add("firstinput");
+            div.style.fontSize = "20px";
+
+            document.body.append(div);
+
+            }
+               
+            function calc(){  
+               let n1=document.querySelector("#n1");
+               let n1Value=n1.value;
+
+               let n2=document.querySelector("#n2");
+               let n2Value=n2.value;
+
+            n1Value=Number(n1Value);
+            n2Value=Number(n2Value);
+                
+                let oper=document.querySelector("#oper");
+                let operValue=oper.value;
+
+                let result="Результат";
+                if (operValue=="+"){
+                    result=n1Value+n2Value;
+                }
+                else if (operValue=="-"){
+                    result=n1Value-n2Value;
+                }
+                else if (operValue=="*"){
+                    result=n1Value*n2Value;
+                }
+                else if (operValue=="/"){
+                    result=n1Value/n2Value;
+                }
+
+                let resultDiv=document.querySelector("#result");
+                resultDiv.innerHTML=result;
+            }    
+        </script>    
+             
+    </head>       
+
+    <body class="bckgrnd">
+    
+    </body>
+    
+</html>
+>>>>>>> ee8dd7b8e90ec8d4d635df03ef44580ed7abfac1
