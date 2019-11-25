@@ -53,7 +53,7 @@
         <?php
 
         $connection=mysqli_connect("localhost", "root", "", "notebook");
-        mysqli_query($connection, "INSERT INTO users(username,password) VALUES('igor', MD5("zxc"))");
+        mysqli_query($connection, "INSERT INTO users(username, password) VALUES('igor', MD5("zxc"))");
         
         $resource=mysqli_query($connection, "select * from users");
 
