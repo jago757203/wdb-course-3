@@ -8,7 +8,7 @@
              function send(event) {
                  event.preventDefault();
                  event.preventDefault();
-                 fetch("Calculator Egor PHP.php", {method: "POST", body: new FormData(document.forms[0])})
+                 fetch("Calculator Egor PHP AJAXXX.php", {method: "POST", body: new FormData(document.forms[0])})
                  .then(response => {
                      return response.text();
                  })
@@ -19,7 +19,7 @@
         </script>
     </head>
 
-        <body class="bckgrnd">
+    <body class="bckgrnd">
         <form method="post">
            <p>
                <b class = "text"> Введите число:</b>
@@ -48,33 +48,12 @@
             </p>
 
             <input type="button" onclick="send(event)" class="b1" value="Отправить"/>
-        </form> 
         
-        <?php
+        </form>
 
-        $connection=mysqli_connect("localhost", "root", "", "notebook");
-        mysqli_query($connection, "INSERT INTO users(username,password) VALUES('igor', MD5("zxc"))");
         
-        $resource=mysqli_query($connection, "select * from users");
-
-        $users=[];
-        foreach($resource as $row) {
-        $users[]=$row;
-        /* $row
-           [
-           id =>1,
-           "username" => "petr"
-           "password" => "1234"
-           "created => "2019-10-30 16:37:12"
-           ]
-           echo $row["username"];
-           */    
-        }
-
-        ?>
-
-            
-            <div id="result" class="firstinput">Результат</div>
+  
+         <div id="result" class="firstinput">Результат</div>
              
        
 
@@ -103,5 +82,5 @@
 
 
 
-</html>
+
 
